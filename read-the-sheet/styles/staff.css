@@ -1,0 +1,40 @@
+
+
+.staff-container {
+  position: relative;
+  top: 15%;
+  width: 1500px;
+  height: 100px;
+  margin: 0 auto;
+
+  
+}
+
+.staff-line {
+  
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  outline: 10px;
+  background-color: black;
+}
+
+.line1 { top: 0%; }
+.line2 { top: 25%; }
+.line3 { top: 50%; }
+.line4 { top: 75%; }
+.line5 { top: 100%; }
+
+
+.treble-clef{
+ height: 210%;
+ position: absolute; top: -50%;
+ border-right: solid red;
+
+}
+
+.treble-clef img {
+  height: 100%;
+}
+
+

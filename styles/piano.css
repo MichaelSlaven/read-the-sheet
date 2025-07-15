@@ -40,3 +40,10 @@
 .black-key.clicked{
   background-color: rgb(61, 61, 61);
 }
+
+@media (max-width: 768px) { /* <-- added media query */
+ .piano-container{
+  right: 0%;
+  left: 0%;
+ }
+}

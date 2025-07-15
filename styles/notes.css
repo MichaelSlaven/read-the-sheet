@@ -1,0 +1,49 @@
+.note{
+
+  position: absolute;
+  top: 101%;
+  height: 25%;
+  left: 50%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.full-note{
+  height: 80%;
+  z-index: 1;
+  border: 3px solid black;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-radius: 50%;
+  width: 100%;
+}
+
+
+.aid-line{
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 48%;
+  width: 200%;
+}
+
+.sharp,
+.flat{
+
+  font-size: 500%;
+  font-weight: bolder;
+  position: absolute;
+  top: -120%;
+  right: 100%;
+  width: 100%;
+  transform: rotate(-10deg);  
+}
+
+.flat{
+  top: -240%
+}
+
+

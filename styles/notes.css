@@ -33,17 +33,18 @@
 .sharp,
 .flat{
 
-  font-size: 500%;
-  font-weight: bolder;
+  font-size: 450%;
+  font-weight: 1000;
   position: absolute;
   top: -120%;
   right: 100%;
   width: 100%;
-  transform: rotate(-10deg);  
+ 
 }
 
 .flat{
-  top: -240%
+  top: -220%;
+  transform: rotate(-10deg); 
 }
 
 

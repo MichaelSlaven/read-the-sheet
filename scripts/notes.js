@@ -25,7 +25,8 @@ export function generateNote(pixelDistance){
 
   html += `
         <div class="note js-note js-note-${noteId} js-active-note"
-        data-piano-key-id="${matchingNote.pianoKeyId}">
+        data-piano-key-id="${matchingNote.pianoKeyId}"
+        data-frequency-id=${matchingNote.frequency[n]}>
 
           <div class="full-note"></div>
           <div class="${matchingNote.accidentalName}">
@@ -35,6 +36,7 @@ export function generateNote(pixelDistance){
         </div>
   
   `
+  
   staffContainer.innerHTML += html;
   const generatedNote = document.querySelector(`.js-note-${noteId}`)
   generatedNote.style.top =`${matchingNote.position[n]}`;

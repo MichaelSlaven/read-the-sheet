@@ -41,9 +41,9 @@
   background-color: rgb(61, 61, 61);
 }
 
-@media (max-width: 768px) { /* <-- added media query */
+@media (max-width: 768px) { 
  .piano-container{
-  right: 0%;
-  left: 0%;
+  right: 1%;
+  left: 1%;
  }
 }

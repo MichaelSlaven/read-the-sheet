@@ -1,165 +1,180 @@
-
-
 export const notes = [
   {
     name: 'C',
     keyColor: 'white',
-    position: ['26%', '113.5%'],
-    aidLine: ['noLine', 'aid-line'],
-    aidlinePosition: [false, '50%'],
+    position: ['113.5%', '26%'],
+    aidLine: ['aid-line', 'noLine'],
+    aidlinePosition: ['50%', false],
     accidentalName: '',
     accidental: '',
-    pianoKeyId: '1'
+    pianoKeyId: '1',
+    sound: 'data/pianoSounds/pianoc3.mp3',
+    frequency: ['C4', 'C5']
   },
   {
-    name: 'C#',
+    name: 'C♯',
     keyColor: 'black',
-    position: ['26%', '113.5%'],
-    aidLine: ['noLine', 'aid-line'],
-    aidlinePosition: [false, '50%'],
+    position: ['113.5%', '26%'],
+    aidLine: ['aid-line', 'noLine'],
+    aidlinePosition: ['50%', false],
     accidentalName: 'sharp',
-    accidental: '#',
-    pianoKeyId: '2'
+    accidental: '♯',
+    pianoKeyId: '2',
+    frequency: ['C#4', 'C#5']
   },
   {
     name: 'Db',
     keyColor: 'black',
-    position: ['13.5%', '101%'],
+    position: ['101%', '13.5%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: 'flat',
     accidental: '♭',
-    pianoKeyId: '2'
+    pianoKeyId: '2',
+    frequency: ['Db4', 'Db5']
   },
   {
     name: 'D',
     keyColor: 'white',
-    position: ['13.5%', '101%'],
+    position: ['101%', '13.5%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: '',
     accidental: '',
-    pianoKeyId: '3'
+    pianoKeyId: '3',
+    frequency: ['D4', 'D5']
   },
   {
-    name: 'D#',
+    name: 'D♯',
     keyColor: 'black',
-    position: ['13.5%', '101%'],
+    position: ['101%', '13.5%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: 'sharp',
-    accidental: '#',
-    pianoKeyId: '4'
+    accidental: '♯',
+    pianoKeyId: '4',
+    frequency: ['D#4', 'D#5']
   },
   {
     name: 'Eb',
     keyColor: 'black',
-    position: ['1%', '88.5%'],
+    position: ['88.5%', '1%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: 'flat',
     accidental: '♭',
-    pianoKeyId: '4'
+    pianoKeyId: '4',
+    frequency: ['Eb4', 'Eb5']
   },
   {
     name: 'E',
     keyColor: 'white',
-    position: ['1%', '88.5%'],
+    position: ['88.5%', '1%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: '',
     accidental: '',
-    pianoKeyId: '5'
+    pianoKeyId: '5',
+    frequency: ['E4', 'E5']
   },
   {
     name: 'F',
     keyColor: 'white',
-    position: ['-11.5%', '76%'],
+    position: ['76%', '-11.5%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: '',
     accidental: '',
-    pianoKeyId: '6'
+    pianoKeyId: '6',
+    frequency: ['F4', 'F5']
   },
   {
-    name: 'F#',
+    name: 'F♯',
     keyColor: 'black',
-    position: ['-11.5%', '76%'],
+    position: ['76%', '-11.5%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: 'sharp',
-    accidental: '#',
-    pianoKeyId: '7'
+    accidental: '♯',
+    pianoKeyId: '7',
+    frequency: ['F#4', 'F#5']
   },
   {
     name: 'Gb',
     keyColor: 'black',
-    position: ['-24%', '63.5%'],
+    position: ['63.5%', '-24%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: 'flat',
     accidental: '♭',
-    pianoKeyId: '7'
+    pianoKeyId: '7',
+    frequency: ['Gb4', 'Gb5']
   },
   {
     name: 'G',
     keyColor: 'white',
-    position: ['-24%', '63.5%'],
+    position: ['63.5%', '-24%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: '',
     accidental: '',
-    pianoKeyId: '8'
+    pianoKeyId: '8',
+    frequency: ['G4', 'G5']
   },
   {
-    name: 'G#',
+    name: 'G♯',
     keyColor: 'black',
-    position: ['-24%', '63.5%'],
+    position: ['63.5%', '-24%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: 'sharp',
-    accidental: '#',
-    pianoKeyId: '9'
+    accidental: '♯',
+    pianoKeyId: '9',
+    frequency: ['G#4', 'G#5']
   },
   {
     name: 'Ab',
     keyColor: 'black',
-    position: ['-36.5%', '51%'],
-    aidLine: ['aid-line', 'noLine'],
-    aidlinePosition: ['50%', false],
+    position: ['51%', '-36.5%'],
+    aidLine: ['noLine', 'aid-line'],
+    aidlinePosition: [false, '50%'],
     accidentalName: 'flat',
     accidental: '♭',
-    pianoKeyId: '9'
+    pianoKeyId: '9',
+    frequency: ['Ab4', 'Ab5']
   },
   {
     name: 'A',
     keyColor: 'white',
-    position: ['-36.5%', '51%'],
-    aidLine: ['aid-line', 'noLine'],
-    aidlinePosition: ['50%', false],
+    position: ['51%', '-36.5%'],
+    aidLine: ['noLine', 'aid-line'],
+    aidlinePosition: [false, '50%'],
     accidentalName: '',
     accidental: '',
-    pianoKeyId: '10'
+    pianoKeyId: '10',
+    frequency: ['A4', 'A5']
   },
   {
-    name: 'A#',
+    name: 'A♯',
     keyColor: 'black',
-    position: ['-36.5%', '51%'],
-    aidLine: ['aid-line', 'noLine'],
-    aidlinePosition: ['50%', false],
+    position: ['51%', '-36.5%'],
+    aidLine: ['noLine', 'aid-line'],
+    aidlinePosition: [false, '50%'],
     accidentalName: 'sharp',
-    accidental: '#',
-    pianoKeyId: '11'
+    accidental: '♯',
+    pianoKeyId: '11',
+    frequency: ['A#4', 'A#5']
   },
   {
     name: 'Bb',
     keyColor: 'black',
-    position: ['38.5%', '38.5%'],//nur notfall l;sung , es muss noch das richitge rendering hinyugef[]gt werden
+    position: ['38.5%', '38.5%'],
     aidLine: ['noLine', 'noLine'],
     aidlinePosition: [false, false],
     accidentalName: 'flat',
     accidental: '♭',
-    pianoKeyId: '11'
+    pianoKeyId: '11',
+    frequency: ['Bb4', 'Bb5']
   },
   {
     name: 'B',
@@ -169,13 +184,10 @@ export const notes = [
     aidlinePosition: [false, false],
     accidentalName: '',
     accidental: '',
-    pianoKeyId: '12'
-  },
-]
-
-
-
-
+    pianoKeyId: '12',
+    frequency: ['B4', 'B5']
+  }
+];
 
 
 
@@ -192,8 +204,8 @@ export function getNoteByName(noteName){
 
 export function randomNumber(min, max){
    min = Math.ceil(min);
-    max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+   max = Math.floor(max);
+   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 

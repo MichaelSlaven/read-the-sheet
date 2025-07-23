@@ -4,8 +4,8 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
- 
-
+  display: flex;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .pause-button{
@@ -34,4 +34,44 @@ html, body {
 
 .highscore{
   left: 80%;
+}
+
+.shake {
+  animation: shake 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+  0%   { transform: translate(0px, 0px); background-color: transparent; }
+  10%  { transform: translate(-2px, -2px); background-color: rgba(150, 0, 0, 0.1); }
+  20%  { transform: translate(2px, 2px); background-color: rgba(150, 0, 0, 0.15); }
+  30%  { transform: translate(-2px, 2px); background-color: rgba(150, 0, 0, 0.2); }
+  40%  { transform: translate(2px, -2px); background-color: rgba(150, 0, 0, 0.25); }
+  50%  { transform: translate(-2px, -2px); background-color: rgba(150, 0, 0, 0.3); }
+  60%  { transform: translate(2px, 2px); background-color: rgba(150, 0, 0, 0.25); }
+  70%  { transform: translate(-2px, 2px); background-color: rgba(150, 0, 0, 0.2); }
+  80%  { transform: translate(2px, -2px); background-color: rgba(150, 0, 0, 0.15); }
+  90%  { transform: translate(-2px, 2px); background-color: rgba(150, 0, 0, 0.1); }
+  100% { transform: translate(0px, 0px); background-color: transparent; }
+}
+
+
+
+.pause-menu{
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  height: 50%;
+  width: 20%;
+  border: solid;
+  z-index: -1;
+  background-color: white;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+  font-size:x-large;
+  color: black;
 }

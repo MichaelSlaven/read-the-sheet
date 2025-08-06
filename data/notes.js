@@ -185,7 +185,7 @@ export const notes = [
     accidentalName: '',
     accidental: '',
     pianoKeyId: '12',
-    frequency: ['B4', 'B5']
+    frequency: ['B4', 'B4']
   }
 ];
 

@@ -3,14 +3,8 @@ import { randomNumber } from "../../data/notes.js";
 function loadBackgrounds(){
   const backrounds =  
 [
-  "cartoon-landscape-arid-desolated-nature.jpg",             // index 0
-  "digital-art-style-illustration-river-nature (5).jpg",     // index 1
-  "digital-art-style-illustration-river-nature (4).jpg",     // index 2
-  "digital-art-style-illustration-river-nature (3).jpg",     // index 3
-  "digital-art-style-illustration-river-nature (2).jpg",     // index 4
-  "digital-art-style-illustration-river-nature (1).jpg",     // index 5
-  "digital-art-style-illustration-river-nature.jpg",         // index 6
-  "digital-art-style-river-nature-landscape.jpg"             // index 7
+  "cartoon-landscape-arid-desolated-nature.jpg",             
+  "digital-art-style-illustration-river-nature (1).jpg",    
 ];
 
 const background = document.querySelector('.js-background');
@@ -30,6 +24,7 @@ setInterval(() => {
 
 
 loadBackgrounds()
+
 
 
 

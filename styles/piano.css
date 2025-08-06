@@ -34,7 +34,7 @@
 
 .clicked{
 
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(196, 196, 196);
 }
 
 .black-key.clicked{
@@ -43,7 +43,7 @@
 
 @media (max-width: 768px) { 
  .piano-container{
-  right: 1%;
-  left: 1%;
+  right: 2%;
+  left: 2%;
  }
 }

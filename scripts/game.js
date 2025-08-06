@@ -1,8 +1,9 @@
 
-import { notes } from "../data/notes.js";
+
 import { generateNote } from "./notes.js";
 import { displayPauseMenu, hidePauseMenu } from "./pauseMenu.js";
 import { playNote } from "./piano.js";
+
 
 
 
@@ -140,13 +141,22 @@ pauseButton.addEventListener('click',()=>{
     pauseButton.innerHTML = '||'
     }else{
     isGamePlaying = false;
-    displayPauseMenu();
+    displayPauseMenu(score);
     
     pauseButton.innerHTML = ' &#9655'
 
   }
 });
 
+const continueButton = document.querySelector('.js-continue-button');
+
+continueButton.addEventListener('click', ()=>{
+  console.log(1)
+  isGamePlaying = true;
+  hidePauseMenu();
+  startGameLoop();
+
+})
 function updateHP(){
   document.querySelector('.js-health-points').innerHTML = `Hp: ${hp}`
 };
@@ -179,7 +189,7 @@ function updateHighscore(){
   }, 500); 
 }
 
-
+console.log(localStorage)
 
 
 

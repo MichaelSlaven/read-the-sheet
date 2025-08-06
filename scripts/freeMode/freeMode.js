@@ -1,4 +1,5 @@
-import { notes } from "../../data/notes.js";
+
+
 import { generatePiano, playNote } from "../piano.js";
 
 generatePiano();
@@ -10,7 +11,7 @@ const now = Tone.now();
 document.querySelectorAll('.js-key').forEach((key)=>{
   key.addEventListener('mousedown', ()=>{
 
-   // synth.triggerAttack(key.dataset.pianoFrequencyId, now);
+
    playNote(key.dataset.pianoFrequencyId)
      key.classList.add('clicked');
   })
@@ -25,4 +26,6 @@ document.querySelectorAll('.js-key').forEach((key)=>{
       synth.triggerRelease(now + 1)
   });
 })
+
+
 

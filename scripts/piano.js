@@ -21,9 +21,12 @@ generatePiano();
 
 
 export function playNote(note) {
-		
-        const sampler = new Tone.Sampler({
-      urls: {
+
+  sampler.triggerAttackRelease(note, '4n')
+}
+
+  const sampler = new Tone.Sampler({
+				urls: {
 					A0: "A0.mp3",
 					C1: "C1.mp3",
 					"D#1": "Ds1.mp3",
@@ -53,12 +56,16 @@ export function playNote(note) {
 					"D#7": "Ds7.mp3",
 					"F#7": "Fs7.mp3",
 					A7: "A7.mp3",
-					C8: "C8.mp3",},
-        baseUrl: "https://tonejs.github.io/audio/salamander/",
-        onload: () => {
-            sampler.triggerAttackRelease([note],0.5);
+					C8: "C8.mp3",
+				},
+				release: 1,
+				baseUrl: "https://tonejs.github.io/audio/salamander/",
+			}).toDestination();
 
-        }
-    }).toDestination();
-      }
+
+      await Tone.loaded();
+  
+  
+
+
 
